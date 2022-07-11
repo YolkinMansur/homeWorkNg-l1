@@ -1,0 +1,28 @@
+<div class="card">
+<h2>{{title}}</h2>
+<ul>
+  <li>{{quote}}</li>
+  <li>{{quote1}}</li>
+  <li>{{quote2}}</li>
+  <li>{{quote3}}</li>
+</ul>
+  <div class="btn" >
+    <button (click)="changeBack()">{{english}}</button>
+    <button (click)="changeQuote()">{{russian}}</button>
+  </div>
+  <div class="cardImg">
+    <img [src]="imgUrl" >
+    <p>{{biography}}</p>
+  </div>
+  <div class="btn">
+    <button (click)="changeBio()">{{russian}}</button>
+    <button (click)="changeBiography()">{{english}}</button>
+  </div>
+
+  <div class="cardSsilka">
+    <a href="{{ssilka}}">{{ssilka}}</a>
+    <a href="{{ssilkaRu}}">{{ssilkaRu}}</a>
+  </div>
+
+</div>
+
